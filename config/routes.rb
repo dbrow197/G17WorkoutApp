@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'stat/stat'
   get 'homepage/index'
   get 'homepage/about'
-  get 'homepage/stats'
+  get 'homepage/stat'
   get 'homepage/tutorial'
   get 'homepage/progression'
   
