@@ -3,9 +3,9 @@ class CreateExercises < ActiveRecord::Migration[5.2]
     create_table :exercises do |t|
       t.string :lift
       t.string :sets
-      t.int :reps
-      t.int :restperiod
-      t.int :weight
+      t.string :reps
+      t.string :restperiod
+      t.string :weight
 
       t.timestamps
     end
