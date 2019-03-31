@@ -1,0 +1,2 @@
+class Progession < ApplicationRecord
+end

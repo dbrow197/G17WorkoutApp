@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lift: MyString
+  sets: MyString
+  reps: 
+  restperiod: 
+  weight: 
+
+two:
+  lift: MyString
+  sets: MyString
+  reps: 
+  restperiod: 
+  weight: 
