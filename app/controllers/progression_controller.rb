@@ -1,0 +1,2 @@
+class ProgressionController < ApplicationController
+end
