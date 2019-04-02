@@ -22,7 +22,6 @@ class ExerciseController < ApplicationController
          render 'new'
         end
     end
-    
     def update
          @user = User.find(params[:id])
          
@@ -33,5 +32,10 @@ class ExerciseController < ApplicationController
             render 'edit'
          end
     end
-    
+    def destroy
+        @article = Article.find(params[:id])
+        @article.destroy
+        
+        redirect_to articles_path
+    end
 end
