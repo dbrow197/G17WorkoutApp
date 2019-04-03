@@ -16,7 +16,7 @@ class UserController < ApplicationController
          
          if @user.update(user_params)
              
-            redirect_to @article
+            redirect_to @user
          else
             render 'edit'
          end

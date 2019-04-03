@@ -1,33 +1,33 @@
 class ProgressionController < ApplicationController
   def index  
-        @user = User.all
+        @progression = Progression.all
   end
   def create
-       @user = User.new(user_params)
+       @progression = Progression.new(progression_params)
       
-        if @user.save
-          redirect_to @user
+        if @progression.save
+          redirect_to @progression
     else
          render 'new'
         end
   end
   def update
-         @user = User.find(params[:id])
+         @progression = Progression.find(params[:id])
          
-         if @user.update(user_params)
+         if @progression.update(progression_params)
              
-            redirect_to @article
+            redirect_to @progression
          else
             render 'edit'
          end
   end
   def show
-        @user = User.find(params[:id])
+        @progression = Progression.find(params[:id])
   end
   def destroy
-        @article = Article.find(params[:id])
-        @article.destroy
+        @progression = Progression.find(params[:id])
+        @progression.destroy
         
-        redirect_to articles_path
+        redirect_to progression_path
     end
 end

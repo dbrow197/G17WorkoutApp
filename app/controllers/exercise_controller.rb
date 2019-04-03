@@ -2,40 +2,40 @@ class ExerciseController < ApplicationController
     
       
      def index  
-        @user = User.all
+        @exercise = Exercise.all
      end
     
     def show
-        @user = User.find(params[:id])
+        @exercise = Exercise.find(params[:id])
     end
     
     def new
-           @user = User.new
+           @exercise = Exercise.new
     end
     
     def create
-       @user = User.new(user_params)
+       @exercise = Exercise.new(exercise_params)
       
-        if @user.save
-          redirect_to @user
+        if @exercise.save
+          redirect_to @exercise
     else
          render 'new'
         end
     end
     def update
-         @user = User.find(params[:id])
+         @exercise = Exercise.find(params[:id])
          
-         if @user.update(user_params)
+         if @exercise.update(exercise_params)
              
-            redirect_to @article
+            redirect_to @exercise
          else
             render 'edit'
          end
     end
     def destroy
-        @article = Article.find(params[:id])
-        @article.destroy
+        @exercise = Exercise.find(params[:id])
+        @exercise.destroy
         
-        redirect_to articles_path
+        redirect_to exercise_path
     end
 end

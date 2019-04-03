@@ -1,17 +1,17 @@
 class DaytypeController < ApplicationController
      def index  
-        @user = User.all
+        @daytype = Daytype.all
      end
     
     def show
-        @user = User.find(params[:id])
+        @daytype = Daytype.find(params[:id])
     end
     def update
-         @user = User.find(params[:id])
+         @daytype = Daytype.find(params[:id])
          
-         if @user.update(user_params)
+         if @daytype.update(daytype_params)
              
-            redirect_to @article
+            redirect_to @daytype
          else
             render 'edit'
          end
