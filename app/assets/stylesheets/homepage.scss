@@ -1,6 +1,8 @@
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$color-background: regent-grey;
+
 
 h1 {
   text-align: center;
@@ -27,10 +29,12 @@ h4 {
   background-color: red;
 }
 
+  
+
 
 body {
   font: 100% $font-stack;
-  background-color: #f2f2f2
+  background-color: #a6a6a6
 }
 
 #message {
