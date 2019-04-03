@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_04_03_141416) do
 
   create_table "daytypes", force: :cascade do |t|
+    t.string "dayindex"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_04_03_141416) do
   create_table "progessions", force: :cascade do |t|
     t.string "weeks"
     t.string "day"
+    t.string "daytype"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,6 +40,7 @@ ActiveRecord::Schema.define(version: 2019_04_03_141416) do
     t.string "username"
     t.string "password"
     t.string "email", default: "", null: false
+    t.string "progression"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "encrypted_password", default: "", null: false

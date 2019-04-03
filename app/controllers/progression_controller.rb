@@ -1,17 +1,17 @@
 class ProgressionController < ApplicationController
-  def index  
+    def index  
         @progression = Progression.all
-  end
-  def create
+    end
+    def create
        @progression = Progression.new(progression_params)
       
         if @progression.save
           redirect_to @progression
-    else
+        else
          render 'new'
         end
-  end
-  def update
+    end
+    def update
          @progression = Progression.find(params[:id])
          
          if @progression.update(progression_params)
@@ -20,11 +20,11 @@ class ProgressionController < ApplicationController
          else
             render 'edit'
          end
-  end
-  def show
+    end
+    def show
         @progression = Progression.find(params[:id])
-  end
-  def destroy
+    end
+    def destroy
         @progression = Progression.find(params[:id])
         @progression.destroy
         
