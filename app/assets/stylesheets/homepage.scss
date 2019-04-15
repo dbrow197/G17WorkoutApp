@@ -10,6 +10,8 @@ h1 {
   color: white;
   background-color: blue;
   text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 1px #121316
 }
 
 h2 {
@@ -17,11 +19,16 @@ h2 {
   font-size: 40px;
   color: black;
   background-color: red;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 1px #121316
 }
 
 h3 {
   color: black;
   background-color: red;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 1px #121316
+  
 }
 
 h4 {
@@ -34,7 +41,8 @@ h4 {
 
 body {
   font: 100% $font-stack;
-  background-color: #a6a6a6
+  background-color: #a6b4e0
+  
 }
 
 #message {
@@ -42,10 +50,13 @@ body {
   font-size: 40px;
   border: blue solid 10px;
   padding:10px;
-  margin-left:40px;
-  margin-right:40px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 80%;
   text-align:center;
   background-color:white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 1px #121316
 }
 
 #about{
@@ -53,10 +64,13 @@ body {
   font-size: 40px;
   border: red solid 10px;
   padding:50px;
-  margin-left:100px;
-  margin-right:100px;
+  margin-left:auto;
+  margin-right:auto;
   text-align:center;
+  width: 80%;
   background-color:white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 1px #121316
 }
 
 p{
@@ -68,9 +82,11 @@ nav {
     font-size:30px;
     color:black;
     position:fixed;
-    border: solid red 5px;
+    border: solid red 10px;
     top:0;
     background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px 1px #121316
 }
 
 nav a:hover {
@@ -79,7 +95,14 @@ nav a:hover {
 }
 
 iframe{
-  border: solid blue 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border: solid blue 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 1px #121316
+  
 }
 
 table, th, td {
@@ -96,9 +119,11 @@ th, td {
 }
 
 img{
-  margin-left:65px;
-  margin-right:65px;
-  border:red solid 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border:red solid 10px;
 }
 
 input {
