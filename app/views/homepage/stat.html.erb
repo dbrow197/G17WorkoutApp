@@ -1,15 +1,7 @@
 
 
  <div id="content">
-            <nav id = super>
-                <!--Navigation bar/ links to other parts of website-->
-        <%= link_to 'Home',  homepage_index_path %>
-        <%= link_to 'Stats',  homepage_stat_path %>
-        <%= link_to 'Tutorial', homepage_tutorial_path %>
-        <%= link_to 'Workout',  homepage_progression_path %>
-        <%= link_to 'About',  homepage_about_path %>
-    </nav>
-</br>
+ <%= render 'common/header' %>
 <h1>Stats about what you've done!</h1>
 
 <table style="width:60%">

@@ -3,9 +3,12 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-    has_one :name
-    has_one :email
-    has_one :progression
+  has_one :progression
   
-    
+  after_create_commit :create_progression
+  
+  def create_progression
+      Progression.create! user:self, benchpress: 40, powerclean: 40, squats: 40, deadlift: 40, overheadpress: 40
+  end
+  
 end

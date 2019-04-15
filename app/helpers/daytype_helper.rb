@@ -1,2 +1,0 @@
-module DaytypeHelper
-end

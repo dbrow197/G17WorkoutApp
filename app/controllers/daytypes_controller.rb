@@ -1,4 +1,4 @@
-class DaytypeController < ApplicationController
+class DaytypesController < ApplicationController
      def index  
         @daytype = Daytype.all
      end
