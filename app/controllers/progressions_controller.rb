@@ -20,7 +20,7 @@ class ProgressionsController < ApplicationController
     def increment
         @progression = Progression.where(user: current_user).first
         @progression.day += 1
-            if @progression.day%3 == 0
+            if (@progression.day-1)%3 == 0
               @progression.weeks +=1
             end
         @progression.benchpress += 10
