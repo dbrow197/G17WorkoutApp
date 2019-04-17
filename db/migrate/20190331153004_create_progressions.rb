@@ -3,7 +3,7 @@ class CreateProgressions < ActiveRecord::Migration[5.2]
     create_table :progressions do |t|
       t.belongs_to :user, index: { unique: true }, foreign_key: true
       t.integer :weeks
-      t.string :day
+      t.integer :day
       t.string :daytype
 
       # Exercise counts?

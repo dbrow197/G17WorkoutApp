@@ -13,6 +13,7 @@ Rails.application.routes.draw do
         post :increment, on: :member
         get :my, on: :member
         post :decrement, on: :member
+        post :restart, on: :member
         
     end
     

@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2019_04_03_141416) do
   create_table "progressions", force: :cascade do |t|
     t.integer "user_id"
     t.integer "weeks"
-    t.string "day"
+    t.integer "day"
     t.string "daytype"
     t.integer "benchpress"
     t.integer "powerclean"

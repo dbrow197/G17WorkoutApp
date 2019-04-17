@@ -2,7 +2,11 @@
 <%= render 'common/header' %>
 <h1>This is where we will build the workouts out of.</h1>
 
-<table style="width:60%">
+<table style="width:60%", position="center">
+  <tr>
+   <th colspan="3">Week <%= @progression.weeks %></th>
+    <th colspan="2">Day <%= @progression.day %></th>
+  </tr>
   <tr>
     <th>Squats</th>
     <th>Deadlift</th> 
@@ -25,4 +29,7 @@
 
 <%= form_for :progression, url: decrement_progression_path do %>
     <input type="submit" value="back">
+<% end %>
+<%= form_for :progression, url: restart_progression_path do %>
+    <input type="submit" value="restart">
 <% end %>
