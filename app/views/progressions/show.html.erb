@@ -4,31 +4,63 @@
 
 <table style="width:60%">
   <tr>
-   <th colspan="2">Week <%= @progression.weeks %></th>
-    <th colspan="1">Day <%= @progression.day %></th>
+    <th colspan="5">Week <%= @progression.weeks %></th>
+  </tr>
+  <tr>
+    <th colspan="5">Day <%= @progression.day %></th>
+  </tr>
+  <tr>
+    <th>Exercise</th>
+    <th>Weight</th>
+    <th>Set</th>
+    <th>Rep</th>
+    <th>Rest Time (min)</th>
   </tr>
   <% if @progression.day%2 ==0 %>
   <tr>
-    <th>Squats</th>
-    <th>Overhead Press</th>
-    <th>Deadlift</th> 
+    <td>Squats</td>
+    <td><%= @progression.squats %></td>
+    <td>5</td>
+    <td>3</td>
+    <td>3</td>
   </tr>
   <tr>
-    <td><%= @progression.squats %></td>
-    <td><%= @progression.overheadpress %></td> 
-    <td><%= @progression.deadlift %></td> 
+    <td>Overhead Press</td>
+    <td><%= @progression.overheadpress %></td>
+    <td>5</td>
+    <td>3</td>
+    <td>2</td>
   </tr>
+  <tr>
+    <td>Deadlift</td>
+    <td><%= @progression.deadlift %></td>
+    <td>1</td>
+    <td>5</td>
+    <td>4</td>
+ </tr>
+
 </table>
   <% elsif @progression.day%2 ==1 %>
   <tr>
-    <th>Squats</th>
-    <th>Benchpress</th>
-    <th>Power Clean</th> 
+    <td>Squats</td>
+    <td><%= @progression.squats %></td>
+    <td>5</td>
+    <td>3</td>
+    <td>3</td>
   </tr>
   <tr>
-    <td><%= @progression.squats %></td>
+    <td>Bench Press</td>
     <td><%= @progression.benchpress %></td> 
-    <td><%= @progression.powerclean %></td> 
+    <td>5</td>
+    <td>3</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Power Clean</td>
+    <td><%= @progression.powerclean %></td>
+    <td>5</td>
+    <td>5</td>
+    <td>3</td>
   </tr>
 </table>
  <% end %>
