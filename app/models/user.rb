@@ -8,7 +8,7 @@ class User < ApplicationRecord
   after_create_commit :create_progression
   
   def create_progression
-      Progression.create! user:self, benchpress: 40, powerclean: 40, squats: 40, deadlift: 40, overheadpress: 40
+      Progression.create! user:self, day: 1, weeks: 1, benchpress: 40, powerclean: 40, squats: 40, deadlift: 40, overheadpress: 40
   end
   
 end

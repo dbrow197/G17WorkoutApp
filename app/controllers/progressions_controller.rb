@@ -1,7 +1,8 @@
 class ProgressionsController < ApplicationController
     include EnforceSignin
     def my
-        @progression = Progression.where(user: current_user).first
+       @progression = Progression.where(user: current_user).first
+      #@progression = Progression.find_by_user(current_user)
         render 'show'
     end
     def restart
