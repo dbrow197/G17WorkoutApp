@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     resource :progression do
         post :increment, on: :member
         get :my, on: :member
+        post :decrement, on: :member
+        
     end
     
     root 'homepage#index'

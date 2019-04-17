@@ -15,4 +15,15 @@ class ProgressionsController < ApplicationController
         @progression.save!
         render 'show'
     end
+    def decrement
+        @progression = Progression.where(user: current_user).first
+        @progression.benchpress += -60
+        @progression.powerclean += -30
+        @progression.squats += 60
+        @progression.overheadpress += -30
+        @progression.deadlift += -120
+        # Treat progression save failures as an app exception.
+        @progression.save!
+        render 'show'
+    end
 end

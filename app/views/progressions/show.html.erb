@@ -23,4 +23,6 @@
     <input type="submit" value="next">
 <% end %>
 
-<%= link_to 'Back', homepage_index_path %>
+<%= form_for :progression, url: decrement_progression_path do %>
+    <input type="submit" value="back">
+<% end %>
