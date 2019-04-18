@@ -9,4 +9,11 @@ feature "User visits login page" do
         expect(page).to have_field("Email")
         expect(page).to have_field("Password")
     end
+
+    scenario "Users accesses tutorials from home page" do
+        visit root_path
+        expect(page).to have_content("Homepage")
+        click_link "Tutorial"
+        expect(page).to have_content("Squat Tutorial")
+    end
 end
