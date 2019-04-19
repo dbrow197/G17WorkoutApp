@@ -146,8 +146,20 @@ input {
 // Place all the styles related to the Homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#mainNav{min-height:56px;background-color:#fff}
-#mainNav .navbar-toggler{font-size:80%;padding:.75rem;color:#64a19d;border:1px solid #64a19d}
+#mainNav
+{
+  min-height:56px;
+  background-color:#fff
+  
+}
+#mainNav .navbar-toggler
+{
+  font-size:80%;
+  padding:.75rem;
+  color:#64a19d;
+  border:1px solid #64a19d
+  
+}
 #mainNav .navbar-toggler:focus{outline:0}
 #mainNav .navbar-brand{color:#161616;font-weight:700;padding:.9rem 0}
 #mainNav .navbar-nav .nav-item:hover{color:fade(white,80%);outline:0;background-color:transparent}
