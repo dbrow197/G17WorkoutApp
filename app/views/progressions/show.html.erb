@@ -1,8 +1,12 @@
- <div id="content">
-<%= render 'common/header' %>
-<h1>This is where we will build the workouts out of.</h1>
 
-<table style="width:60%">
+
+ <section id="show" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Do Work.</h2>
+          <p class="text-white-50">
+       <table class = "table" style="width:80%">
   <tr>
     <th colspan="5">Week <%= @progression.weeks %></th>
   </tr>
@@ -64,7 +68,7 @@
   </tr>
 </table>
  <% end %>
- 
+       
 
 <%= form_for :progression, url: increment_progression_path do %>
     <input type="submit" value="next">
