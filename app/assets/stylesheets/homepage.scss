@@ -115,7 +115,7 @@ table, th, td {
    margin-left: auto;
   margin-right: auto;
   width: 80%;
-  background: linear-gradient(10deg, #495057, black);
+  background: -webkit-linear-gradient(10deg, #495057, black);
   color: white;
 ;
   
@@ -443,3 +443,8 @@ footer {
   color:black;
 }
 
+
+input[type="submit"] {
+  padding: 30px;
+  
+}

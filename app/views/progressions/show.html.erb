@@ -69,7 +69,10 @@
 </table>
  <% end %>
        
-<%= link_to 'Get Started',  my_progression_path, html_options={class:"btn btn-primary mx-auto"} %>
+       
+       
+   
+
 <%= form_for :progression, url: increment_progression_path do %>
     <input html_options={class:"btn btn-primary mx-auto"} type="submit" value="next" >
 <% end %>
