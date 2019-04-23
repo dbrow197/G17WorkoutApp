@@ -1,5 +1,5 @@
 
-$font-stack:    Helvetica, sans-serif;
+$font-stack:    Varela Round, sans-serif;
 $primary-color: #333;
 $color-background: regent-grey;
 
@@ -126,10 +126,11 @@ iframe{
 table, th, td {
   font-size:30px;
   border: 1px solid black;
+  border-radius: 3px;
    margin-left: auto;
   margin-right: auto;
   width: 80%;
-  background: -webkit-linear-gradient(10deg, #495057, #212529);
+  background: -webkit-linear-gradient(110deg, #495057, #212529);
   color: white;
 ;
   
@@ -296,6 +297,8 @@ input {
     padding: .9rem 0;
   }
 
+
+
   .navbar-nav {
     .nav-item {
       &:hover {
@@ -404,11 +407,6 @@ input {
   }
 }
 
-
-// Variables
-
-
-
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
@@ -445,13 +443,14 @@ footer {
 
 
 input[type="submit"] {
-  padding: 30px;
+  
   float: left;
   display: block;
   margin-left:auto;
   margin-right:auto;
   width: 30%;
-   box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
+  border-radius: 3px;
+  box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
   padding: 1.25rem 2rem;
   font-family: 'Varela Round';
   font-size: 80%;

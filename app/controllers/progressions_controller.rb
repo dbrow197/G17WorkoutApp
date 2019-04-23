@@ -9,11 +9,11 @@ class ProgressionsController < ApplicationController
         @progression = Progression.where(user: current_user).first
         @progression.day =1
         @progression.weeks =1
-        @progression.benchpress =0
-        @progression.powerclean =0
-        @progression.squats =0
-        @progression.overheadpress =0
-        @progression.deadlift =0
+        @progression.benchpress =45
+        @progression.powerclean =45
+        @progression.squats =45
+        @progression.overheadpress =45
+        @progression.deadlift =45
         # Treat progression save failures as an app exception.
         @progression.save!
         render 'show'

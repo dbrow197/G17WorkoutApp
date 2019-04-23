@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+  
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
    <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -120,7 +126,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; Get Strong 2019
     </div>
   </footer>
 

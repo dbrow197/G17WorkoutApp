@@ -4,7 +4,22 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Do Work.</h2>
+          <h2 class="text-white mb-4">Do Work.
+           
+
+<%= form_for :progression, url: increment_progression_path do %>
+    <input html_options={class:"btn btn-primary mx-auto"} type="submit" value="next" >
+<% end %>
+
+<%= form_for :progression, url: decrement_progression_path do %>
+    <input type="submit" value="back">
+<% end %>
+<%= form_for :progression, url: restart_progression_path do %>
+    <input type="submit" value="restart">
+<% end %>
+
+          </h2>
+          
           <p class="text-white-50">
        <table class = "table" style="width:90%">
   <tr>
@@ -71,7 +86,7 @@
        
        
        
-   
+ 
 
 <%= form_for :progression, url: increment_progression_path do %>
     <input html_options={class:"btn btn-primary mx-auto"} type="submit" value="next" >
