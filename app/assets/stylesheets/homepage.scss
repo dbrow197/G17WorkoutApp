@@ -19,110 +19,12 @@ $black: #161616 !default;
 $primary: #64a19d !default;
 
 
-/*
 
-h1 {
-  text-align: center;
-  font-size: 50px;
-  color: white;
-  background-color: blue;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px 1px #121316
-}
-
-h2 {
-  text-align: center;
-  font-size: 40px;
-  color: black;
-  background-color: red;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px 1px #121316
-}
-
-h3 {
-  color: black;
-  background-color: red;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px 1px #121316
-  
-}
-
-h4 {
-  color: black;
-  background-color: red;
-}
-
-  
-
-*/
-body {
+.body {
   font: 100% $font-stack;
   background-color:black;
-  
-}
-/*
-#message {
-  font-family: "Georgia", Times, serif;
-  font-size: 40px;
-  border: blue solid 10px;
-  padding:10px;
-  margin-left:auto;
-  margin-right:auto;
-  width: 80%;
-  text-align:center;
-  background-color:white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px 1px #121316
 }
 
-#about{
-  font-family: "Georgia", Times, serif;
-  font-size: 40px;
-  border: red solid 10px;
-  padding:50px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:right;
-  width: 80%;
-  background-color:white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px 1px #121316
-}
-
-p{
-  font-size: 20px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:right;
-  width: 40%;
-}
-
-nav {
-    
-    font-size:30px;
-    color:black;
-    position:fixed;
-    border: solid red 10px;
-    top:0;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 3px 1px #121316
-}
-
-nav a:hover {
-  background-color: lightblue;
-  color: green;
-}
-
-iframe{
-  
-  border: black 10px;
-  
-  box-shadow: 0px 0px 10px 5px #121316
-  
-}
-*/
 table, th, td {
   font-size:30px;
   border: 1px solid black;
@@ -139,30 +41,6 @@ th, td {
   padding: 15px;
   text-align: center;
 }
-/*
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  border:red solid 10px;
-}
-
-input {
-  color:green;
-}
-
-#buttonWrapper{
-  float: right;
-}
-
-
-*/
-
-
-// Place all the styles related to the Homepage controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
 .about-section {
   padding-top: 10rem;
@@ -444,11 +322,11 @@ footer {
 
 input[type="submit"] {
   
-  float: left;
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
-  width: 30%;
+  //position: center;
+  //display: block;
+ // margin-left:auto;
+  //margin-right:auto;
+  width: 60%;
   border-radius: 3px;
   box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
   padding: 1.25rem 2rem;
