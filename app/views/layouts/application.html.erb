@@ -3,11 +3,7 @@
 
 <head>
   
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
+
    <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -18,7 +14,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Grayscale - Start Bootstrap Theme</title>
+  <title>Beginning Strength</title>
   <!-- Bootstrap core CSS -->
   <link href="https://blackrockdigital.github.io/startbootstrap-grayscale/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,16 +28,22 @@
 
 </head>
 
-<body id="page-top">
-  
- 
     <% if notice %>
+     <section id="show" class="about-section">
   <p class="alert alert-success"><%= notice %></p>
+  </section>
 <% end %>
 <% if alert %>
+<section id="show" class="about-section">
   <p class="alert alert-danger"><%= alert %></p>
+</section>
 <% end %>
+
     <%= yield %>
+  
+<body id="page-top bg-dark">
+ 
+ 
 
   
   <%=render "common/header"%>
@@ -102,7 +104,7 @@
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">+1 (704) 340-5592</div>
             </div>
           </div>
         </div>
